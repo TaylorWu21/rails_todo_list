@@ -1,2 +1,13 @@
-<h1>Items#edit</h1>
-<p>Find me in app/views/items/edit.html.erb</p>
+<h1>Items Edit</h1>
+
+<%= form_for @items do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	</br>
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+	</br>
+	<%= f.label :complete %>
+	<%= f.check_box :complete %>
+	<%= f.submit %>
+<% end %>

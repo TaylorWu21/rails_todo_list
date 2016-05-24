@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'items/index'
+  resources :items
+  root 'items#index'
 
   get 'items/new'
-
   get 'items/edit'
-
   get 'items/show'
 
   # The priority is based upon order of creation: first created -> highest priority.

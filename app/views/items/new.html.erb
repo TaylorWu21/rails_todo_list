@@ -1,2 +1,13 @@
-<h1>Items#new</h1>
-<p>Find me in app/views/items/new.html.erb</p>
+<h1>Add New Todo</h1>
+
+<%= form_for @items do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	</br>
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+	</br>
+	<%= f.label :complete %>
+	<%= f.check_box :complete %>
+	<%= f.submit %>
+<% end %>
