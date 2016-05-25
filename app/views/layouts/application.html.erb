@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>TodoList</title>
+  <link='stylesheets'
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Demo project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+  <style type="text/css"></style>
 </head>
 <body>
-
-<%= yield %>
-
+	<header class='banner'>
+		<h1>My First Rails Project</h1>
+	</header>
+	<%=render 'layouts/navbar' %>
+	<%= yield %>
+	<footer>
+	</footer>
 </body>
 </html>
